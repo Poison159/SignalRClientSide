@@ -14,7 +14,17 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-list>
+      <ion-item>
+        <ion-text color="primary">{{data.id}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text color="warning">{{data.title}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text color="success">{{data.createdDateTime.split('T')[1].split('.')[0]}}</ion-text>
+      </ion-item>
+    </ion-list>
+   
   </div>
 </ion-content>
