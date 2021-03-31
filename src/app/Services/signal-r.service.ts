@@ -12,7 +12,7 @@ export class SignalRService {
   public hubConnection: signalR.HubConnection
   public startConnection = () => {
     this.hubConnection = new signalR.HubConnectionBuilder()
-                            .withUrl('https://signalrweb.conveyor.cloud/messagebroker')
+                            .withUrl('https://192.168.8.101:45455/messagebroker')
                             .build();
     this.hubConnection
       .start()
